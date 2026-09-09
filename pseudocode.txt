@@ -1,0 +1,15 @@
+Name: Matthew Chen
+
+Flip a coin.
+
+if Heads:
+  Alpha = Player 1
+  Beta = Player 2
+
+else:
+  Alpha = Player 2
+  Beta = Player 1
+
+
+
+
