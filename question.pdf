@@ -1,0 +1,1 @@
+If C++ already knows the type of every variable, why does it not automatically prevent us from doing an operation that could give us an unintended result, like integer division.
