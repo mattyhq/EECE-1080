@@ -1,0 +1,25 @@
+Ledgeon Program Design
+
+START
+
+Set the charity charges per patient to 1375.61
+
+Get the first year from the user
+Get the number of patients that was seen in the first year
+
+Get the second year from the user 
+Get the number of patients that was seen in the second year
+
+Calculate the charity charges for first year
+
+Calculate the charity charges for the second year
+
+Calculate the difference in patients between the two years
+
+Calculate the percentange increase in patients
+
+Display the charity charges for the first year
+Display the charity charges for the second year
+Display the percentage increase in patients
+
+END
