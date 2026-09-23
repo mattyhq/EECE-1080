@@ -1,0 +1,6 @@
+1. What is the definition of type?
+The definition of a type is what kind of value a variable can store and what operations can be performed on that value. For example, int supports such integer arithmetic and stores whole numbers, while double stores such floating-point numbers and supports floating-point arithmetic.
+2. What is the difference between a strongly and weakly typed high-level programming language?
+A strongly typed language is capable of enforcing rules abut how different types can be used and usually incompatible types is not alllowed to be used without an appropriate conversion. A weakly typed language can allow more implicit conversions and interactions between different types.
+3. Why do applications written in a strongly typed high-level programming language usually have fewer bugs than applications written in weakly typed high-level programming languages?
+Strong typing are able to find and catch type-related mistakes earlier, often during compiilation. It can prevent invalid operations and make it clear on what kind of a data a variable should contain. This can reduce a certain type of bugs before the program runs, however, strong typing does not prevent every possible programming error.
