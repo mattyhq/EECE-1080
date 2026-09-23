@@ -14,7 +14,7 @@ double firstYearCharityCharges = 0.0;
 double secondYearCharityCharges = 0.0;
 double patientIncreasePercent = 0.0;
 
-std::cout << "Enter the first year:";
+std::cout << "Enter the first year: ";
 std::cin >> firstYear;
 
 std::cout << "Enter the number of patients we saw that year: ";
