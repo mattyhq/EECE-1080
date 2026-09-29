@@ -1,0 +1,27 @@
+START
+
+Declare the constants for:
+  number of quarters per year = 4
+  epoch year = 1977
+  epoch quarter = 1
+
+Make the user enter the year for the calculations
+Get the user's year
+
+Make the user enter the quarter for the calculation
+Get the user's quarter
+
+Calculate the number of quarters from the year 0 to the user's data
+Calculate the number of quarters from the year 0 to the epoch.
+
+Take the user's quarter count and subtract the epoch quarter count from it.
+
+Use the number of quarters between the epoch and the user's date as the argument for the GDP estimation function.
+
+Convert the user's quarter number to its ordinal name.
+
+Format the GDP estimate as a monetary amount
+
+Display the quarter, year, and formatted GDP estimate
+
+END
