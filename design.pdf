@@ -5,23 +5,28 @@ Declare the constants for:
   epoch year = 1977
   epoch quarter = 1
 
-Make the user enter the year for the calculations
-Get the user's year
+Make the user enter the year for the calculation.
+Get the user's year.
 
-Make the user enter the quarter for the calculation
-Get the user's quarter
+Make the user enter the quarter for the calculation.
+Get the user's quarter.
 
-Calculate the number of quarters from the year 0 to the user's data
-Calculate the number of quarters from the year 0 to the epoch.
+Calculate the number of quarters from the year 0 to the user's date:
+  user date quarters = (user year × number of quarters per year) + user quarter
 
-Take the user's quarter count and subtract the epoch quarter count from it.
+Calculate the number of quarters from the year 0 to the epoch:
+  epoch quarters = (epoch year × number of quarters per year) + epoch quarter
 
-Use the number of quarters between the epoch and the user's date as the argument for the GDP estimation function.
+Take the user's quarter count and subtract the epoch quarter count from it:
+  quarters between = user date quarters - epoch quarters
+
+Use the number of quarters between the epoch and the user's date
+as the argument for the GDP estimation function.
 
 Convert the user's quarter number to its ordinal name.
 
-Format the GDP estimate as a monetary amount
+Format the GDP estimate as a monetary amount.
 
-Display the quarter, year, and formatted GDP estimate
+Display the quarter, year, and formatted GDP estimate.
 
 END
