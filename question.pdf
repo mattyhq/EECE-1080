@@ -1,0 +1,1 @@
+In this lab, we used functions like get_int() and format_money() without having to write their code. How does C++ know how to run these functions if we never wrote their code inside our file?
