@@ -1,1 +1,4 @@
-
+A basketball set play functions just like a programming function.
+A diagram in a team's playbook serves as the function declaration. It defines the play's name like "Pick-and-Roll", outlines the expected input roles like a ball-handler or screener (parameters), and identifies the expected outcome, such as an open shot, without detailing every micro-movement.
+During a game, the coach shouting "Run Post Split!" from the sideline constitutes the function call. Assigning specific athletes to those roles—such as designating the post player to get the ball and the guards to cut around him—supplies the arguments for the play.
+Once initiated, the players execute the cuts, screens, and passes automatically on the court. The coach relies on abstraction; they do not need to manually control the players' heart rates, footwork, or muscle contractions. Finally, the two points scored on the scoreboard represent the return value delivered back to the team.
