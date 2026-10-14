@@ -1,0 +1,2 @@
+Nesting dolls lesson.
+Use nesting dolls to demonstrate nested if statements. For example, students can open the outer doll only when its condition is true, and then they can test the inner doll's condition. In C++, the inner if statement is inside the outer block's braces and can only be reached when the outer condition ist rue. Bothc onditions must be true to execute the inner body.  Now, smaller dolls can represent blocks inside larger blocks. Ask students to predict what happens when the outer condition is false.
