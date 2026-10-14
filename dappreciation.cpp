@@ -10,14 +10,14 @@ const double ZERO{0.0}, ONE_PENALTY{0.02}, TWO_PENALTY{0.10};
 const double THREE_PENALTY{0.20}, PREMIUM_BONUS{0.05};
 
 int car_model_year() {
-    std::cout << "What is the model year of the car?\n";
+    std::cout << "What is the model year of the car? ";
     int year{};
     std::cin >> year;
     return year;
 }
 
 int car_accidents() {
-    std::cout << "How many accidents has the car been in?\n";
+    std::cout << "How many accidents has the car been in? ";
     int accidents{};
     std::cin >> accidents;
     return accidents;
@@ -29,7 +29,7 @@ true means the car has premium options; false means it does not.
 */
 bool car_has_premium_options() {
     // Prompt for yes or no.
-    std::cout << "Does the car have premium options? Enter yes or no.\n";
+    std::cout << "Does the car have premium options? Enter yes or no. ";
     // Store the answer as a string.
     std::string answer{};
     // Read the answer.
@@ -39,7 +39,7 @@ bool car_has_premium_options() {
 }
 
 double car_msrp() {
-    std::cout << "What was the car's original MSRP?\n";
+    std::cout << "What was the car's original MSRP? ";
     double msrp{};
     std::cin >> msrp;
     return msrp;
