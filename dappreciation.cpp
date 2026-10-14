@@ -10,55 +10,54 @@ const double ZERO{0.0}, ONE_PENALTY{0.02}, TWO_PENALTY{0.10};
 const double THREE_PENALTY{0.20}, PREMIUM_BONUS{0.05};
 
 int car_model_year() {
-    std::cout << "What is the model year of the car? ";
-    int year{};
-    std::cin >> year;
-    return year;
+  int model_year{};
+  std::cout << "What is the model year of the car? ";
+  std::cin >> model_year;
+  return model_year;
 }
 
 int car_accidents() {
-    std::cout << "How many accidents has the car been in? ";
-    int accidents{};
-    std::cin >> accidents;
-    return accidents;
-}
-
-/*
-Prompts for yes or no and returns a bool:
-true means the car has premium options; false means it does not.
-*/
-bool car_has_premium_options() {
-    // Prompt for yes or no.
-    std::cout << "Does the car have premium options? Enter yes or no. ";
-    // Store the answer as a string.
-    std::string answer{};
-    // Read the answer.
-    std::cin >> answer;
-    // Return true for yes and false for no.
-    return answer == "yes";
+  int accidents{};
+  std::cout << "How many accidents has the car been in? ";
+  std::cin >> accidents;
+  return accidents;
 }
 
 double car_msrp() {
-    std::cout << "What was the car's original MSRP? ";
-    double msrp{};
-    std::cin >> msrp;
-    return msrp;
+  double msrp{};
+  std::cout << "How much did you pay for the car? ";
+  std::cin >> msrp;
+  return msrp;
 }
 
-void print_eligible_message(double price) {
-    std::cout << "dappreciation will list your car for $"
-              << std::fixed << std::setprecision(DIGITS) << price << ".\n";
+bool car_has_premium_options() {
+
+  std::string has_options_string{""};
+
+  std::cout << "Does your car have premium options (yes/no)? ";
+
+  std::cin >> has_options_string;
+
+  if (has_options_string == "yes") {
+
+    return true;
+  } else {
+
+    return false;
+  }
+}
+
+void print_eligible_message(double resale_price) {
+  std::cout << std::fixed << std::setprecision(DIGITS)
+            << "dappreciation will list your car for $" << resale_price
+            << ".\n";
 }
 
 void print_ineligible_message() {
-    std::cout << "Unfortunately your car is ineligible for the "
-                 "dappreciation platform.\n";
+  std::cout << "Unfortunately your car is ineligible for the dappreciation "
+               "platform.\n";
 }
 
-/*
-Reads car information, checks eligibility, and prints the resale price
-or an ineligible message.
-*/
 int main() {
     int year{car_model_year()};
     int accidents{car_accidents()};
