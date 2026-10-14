@@ -1,32 +1,21 @@
 START
 
-Declare the constants for:
-  number of quarters per year = 4
-  epoch year = 1977
-  epoch quarter = 1
-
-Make the user enter the year for the calculation.
-Get the user's year.
-
-Make the user enter the quarter for the calculation.
-Get the user's quarter.
-
-Calculate the number of quarters from the year 0 to the user's date:
-  user date quarters = (user year × number of quarters per year) + user quarter
-
-Calculate the number of quarters from the year 0 to the epoch:
-  epoch quarters = (epoch year × number of quarters per year) + epoch quarter
-
-Take the user's quarter count and subtract the epoch quarter count from it:
-  quarters between = user date quarters - epoch quarters
-
-Use the number of quarters between the epoch and the user's date
-as the argument for the GDP estimation function.
-
-Convert the user's quarter number to its ordinal name.
-
-Format the GDP estimate as a monetary amount.
-
-Display the quarter, year, and formatted GDP estimate.
-
+Read the model year (int), accidents (int), and premium options (yes/no).
+  and MSRP is (double), in that order.
+age = 2025 - model year
+IF the age < 11 AND accidents <= 3
+  Set up the baseline to 0.85 if age < 5, 0.63 if age is 5 through 8,
+    or 0.45 if age is 9 or 10.
+  Set penalty by accident count is:
+    0: 0.00, 1: 0.02, 2: 0.10, 3: 0.20.
+  percentage = baseline - pentalty
+IF premium options = yes
+  percentage = percentage + 0.05
+END IF
+price = MSRP * percentage
+Print "dappreciation will list your car for $<price>."
+  with the price formatted to around two decimal places.
+ELSE
+  Print "Unfortunately your car is ineligible for the dappreciation platform." as a singular one liner.
+END IF
 END
